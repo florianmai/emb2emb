@@ -1,0 +1,10 @@
+scikit-learn
+torch
+git+https://github.com/XingxingZhang/pysari.git
+h5py
+progress
+tokenizers==0.3.0
+tensorboard
+tqdm
+nltk
+transformers

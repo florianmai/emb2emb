@@ -1,0 +1,44 @@
+{
+    "savedir": "savedir/test/",
+    "model_file": "model.pickle",
+
+    "encoder": "unknown",
+    "decoder": "unknown",
+    "share_embedding": true,
+    "word_dropout": 0.0,
+
+    "dataset_path" : "unknown",
+    "data_fraction": 1.0,
+    "max_sequence_len": 100,
+
+    "lr" : 0.001,
+    "device": "cuda:0",
+    "validation_frequency": 10000,
+    "valsize": 0.1,
+    "max_steps": -1,
+    "print_frequency": 100,
+    "teacher_forcing_ratio": 0.5,
+    "teacher_forcing_batchwise": false,
+
+    "gaussian_noise_std": 0.0,
+    "hidden_size": 1024,
+
+    "variational": false,
+    "lambda_r": 1.0,
+    "lambda_kl": 0.1,
+    "kl_delay": 1,
+
+    "adversarial": false,
+    "lambda_a": 0.05,
+    "discriminator_lr": 0.001,
+    
+    "denoising": false,
+    "p_drop": 0.0,
+    
+    "rae_regularization" : 0.0,
+
+    "unit_sphere": false,
+    "workers": 0,
+    "tokenizer": "BERT",
+    "tokenizer_location": "bert-base-uncased"
+}

@@ -1,0 +1,54 @@
+{
+    "savedir": "./tmp/yelp/p10/",
+    "model_file": "model.pickle",
+
+    "encoder": "RNNEncoder",
+    "decoder": "RNNDecoder",
+    "share_embedding": true,
+    
+    "tokenizer_location" : "./tmp/bpeyelp/tokenizer",
+
+    "dataset_path" : "./tmp/bpeyelp/",
+    "data_fraction": 1.0,
+    "max_sequence_len": 100,
+
+    "lr" : 0.0001,
+    "device": "cuda:0",
+    "validation_frequency": 50000,
+    "valsize": 0.01,
+    "max_steps": 500000,
+    "print_frequency": 100,
+    "teacher_forcing_ratio": 0.5,
+    "teacher_forcing_batchwise": false,
+
+    "gaussian_noise_std": 0.0,
+    "hidden_size": 1024,
+
+    "variational": false,
+    "lambda_r": 1.0,
+    "lambda_kl": 0.05,
+    "kl_delay": 1,
+    "unit_sphere": false,
+    "workers": 0,
+    "tokenizer": "CharBPETokenizer",
+
+    "adversarial": false,
+    "lambda_a": 0.0,
+
+    "denoising": true,
+    "p_drop": 0.10,
+
+    "RNNEncoder": {
+        "type": "LSTM",
+        "layers": 1,
+        "input_size": 300,
+        "hidden_size": 512
+    },
+
+    "RNNDecoder": {
+        "type": "LSTM",
+        "layers": 1,
+        "input_size": 300,
+        "hidden_size": 512
+    }
+}

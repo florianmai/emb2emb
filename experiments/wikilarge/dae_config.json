@@ -1,0 +1,51 @@
+{
+    "savedir": "./tmp/wikilarge/lstmae0.0p010/",
+    "model_file": "model.pickle",
+
+    "encoder": "RNNEncoder",
+    "decoder": "RNNDecoder",
+    "share_embedding": true,
+    
+    "tokenizer_location" : "./tmp/wikilarge/tokenizer",
+
+    "dataset_path" : "./tmp/wikilarge/",
+    "data_fraction": 1.0,
+    "max_sequence_len": 100,
+
+    "lr" : 0.0001,
+    "device": "cuda:0",
+    "validation_frequency": 10000,
+    "print_frequency": 100,
+    "teacher_forcing_ratio": 0.5,
+    "teacher_forcing_batchwise": false,
+
+    "gaussian_noise_std": 0.0,
+    "hidden_size": 1024,
+
+    "variational": false,
+    "lambda_r": 1.0,
+    "lambda_kl": 0.05,
+    "kl_delay": 1,
+    "valsize": 0.05,
+    "unit_sphere": false,
+    "workers": 0,
+    "tokenizer": "CharBPETokenizer",
+
+    "adversarial": false,
+    "lambda_a": 0.01,
+
+    "denoising": true,
+    "p_drop": 0.10,
+
+    "RNNEncoder": {
+        "type": "LSTM",
+        "layers": 2,
+        "input_size": 300
+    },
+
+    "RNNDecoder": {
+        "type": "LSTM",
+        "layers": 2,
+        "input_size": 300
+    }
+}
