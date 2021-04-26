@@ -73,7 +73,7 @@ via the following command:
 
 ```bash
 cd autoencoders
-python data_loaders.py ../data/wikilarge/all_train ../wikilarge/wiki.h5 64 -t CharBPETokenizer -mw 30000
+python data_loaders.py ../data/wikilarge/all_train ../wikilarge/wiki 64 -t CharBPETokenizer -mw 30000
 ```
 
 ### Build config file
