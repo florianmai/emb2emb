@@ -337,7 +337,6 @@ def _get_data_pairs(params):
     data_dict = {e: {} for e in endings}
     for ending in endings:
         s1 = read_file(join(dataset_path, "s1." + ending), params)
-        s1 = s1
         s2 = read_file(join(dataset_path, "s2." + ending), params)
         data_dict[ending]["Sx"] = s1 if not params.invert_style else s2
         data_dict[ending]["Sy"] = s2 if not params.invert_style else s1
